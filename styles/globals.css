@@ -1,0 +1,219 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  background-image: url("../public/images/background.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* navbar components  */
+.navbar {
+  width: 100%;
+  padding: 20px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.container-nav {
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+.form-control {
+  background-color: #e5e5e5;
+  color: #999999;
+}
+
+.btn-search {
+  background-color: #b9972f;
+  color: white;
+  padding: 4px 24px;
+  border-radius: 5px;
+}
+
+span {
+  margin-left: 10px;
+}
+
+/* greenBar */
+.greenBar {
+  width: 100%;
+  height: 5px;
+  background-color: #f29e0f;
+}
+
+/* blueNav */
+.blueNav {
+  width: 100%;
+  background-color: #1a4167;
+  color: white;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 24px 120px;
+}
+
+/* section */
+section {
+  background-color: white;
+  margin: 16px;
+  height: fit-content;
+}
+
+section > h1 {
+  font-size: xx-large;
+  color: #022c55;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+section > p {
+  font-size: medium;
+}
+
+section > h4 {
+  font-size: large;
+}
+
+ol.abc {
+  list-style-type: lower-alpha;
+  font-size: medium;
+}
+
+ul {
+  font-size: medium;
+}
+
+/* survei */
+.survei {
+  font-size: medium;
+}
+
+.survei h4 {
+  margin-top: 20px;
+  font-size: large;
+}
+
+.share {
+  margin-top: 36px;
+  border-top: 2px solid;
+  font-size: small;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* button */
+.buttonShare {
+  margin: 10px 20px;
+  padding: 10px 20px;
+}
+
+.buttonShare:hover {
+  cursor: pointer;
+}
+
+.twitterBtn {
+  background-color: #1da1f2;
+  color: white;
+}
+
+.facebookBtn {
+  background-color: #4267b2;
+  color: white;
+}
+
+.googleBtn {
+  background-color: #db4a39;
+  color: white;
+}
+
+.infoBtn {
+  background-color: lawngreen;
+  color: white;
+  width: fit-content;
+  padding: 10px;
+  font-size: smaller;
+  margin-bottom: 40px;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  height: 200px;
+  padding: 40px 260px;
+  border-top: 5px solid #f29e0fea;
+  background-color: #1a4167;
+  color: white;
+}
+
+.footer a {
+  display: flex;
+  flex-grow: 1;
+}
+
+.greenText {
+  color: #b9972f;
+}
+
+/* copyright */
+.copyright {
+  background-color: #022c55;
+  color: white;
+  font-size: small;
+  padding: 40px 80px;
+  height: 80px;
+  width: 100%;
+}
+
+.copyright span {
+  float: right;
+}
+
+/* star rating */
+.rate {
+  float: left;
+  height: 16px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
